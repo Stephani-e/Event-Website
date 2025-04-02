@@ -1,0 +1,127 @@
+:root {
+  --color: white;
+  --color1: #071a2b;
+  --color2: #003768;
+  --color3: #071a2b;
+  --color4: #173d86;
+  --color5: #64676c;
+  --color6: #868c98;
+  --color7: yellow;
+  --color8: #f5f3f9;
+  --primary-font: "Inter", sans-serif;
+}
+.team-section {
+  gap: 10px;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--color);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color1);
+}
+
+/* Team grid */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto 0 40px;
+}
+
+/* Individual team member */
+.team-member {
+  background: var(--color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* Image container */
+.image-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color4);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Social Icons Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: var(--color);
+  font-size: 18px;
+  background: var(--color6);
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--color);
+}
+
+/* Text styling */
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--color3);
+}
+
+p {
+  font-size: 0.9rem;
+  color: var(--color6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .team-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .image-wrapper {
+      width: 100px;
+      height: 100px;
+  }
+}

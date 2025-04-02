@@ -1,0 +1,620 @@
+/*SECTION 2*/
+.content2 {
+  position: relative;
+  min-height: 120vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+/*SECTION 2-1*/
+.content2-1 {
+  width: 50%;
+}
+
+.content2-1 > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content2-1 h2 {
+  font-size: 50px;
+  color: var(--color1);
+}
+
+.content2-1p1,
+.content2-1p2 {
+  line-height: 1.5;
+  color: var(--color5);
+}
+
+.c2-1-senn {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding-bottom: 30px;
+}
+
+.c2-1-sen {
+  display: flex;
+  align-items: flex-end;
+}
+
+.c2-1-sen .content2-1-icon {
+  font-size: 30px;
+  color: var(--color1);
+}
+
+.c2-1-sen .c2-1-w {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 15px;
+}
+
+.c2-1-sen .c2-1-w h5 {
+  font-size: 20px;
+  color: var(--color2);
+}
+
+.c2-1-sen .c2-1-w p {
+  font-size: small;
+  color: var(--color5);
+}
+
+.tic-k {
+  position: absolute;
+  background-color: var(--color3);
+  padding: 15px 2px;
+  overflow: hidden;
+}
+
+.tic-k::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Starts off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: var(--color4);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.tic-k:hover::before {
+  left: 0;
+}
+
+.tic-k a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color);
+  z-index: 1;
+}
+
+/*SECTION 2-2*/
+.content2-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+#content2-2 .main-img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+#content2-2 .small-img {
+  position: absolute;
+  width: 40%;
+  top: 27%;
+  height: auto;
+  right: 205px;
+  z-index: 2;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .content2-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content2-1 > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .content2-1 h2 {
+    font-size: 50px;
+    color: var(--color1);
+  }
+
+  .content2-1p1,
+  .content2-1p2 {
+    line-height: 1.5;
+    color: var(--color6);
+  }
+
+  .c2-1-senn {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-bottom: 30px;
+    justify-content: baseline;
+    justify-items: center;
+  }
+
+  .c2-1-sen {
+    display: flex;
+    align-items: flex-end;
+    justify-items: baseline;
+  }
+
+  .c2-1-sen .content2-1-icon {
+    font-size: 20px;
+    color: var(--color1);
+  }
+
+  .c2-1-sen .c2-1-w {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 15px;
+  }
+
+  .c2-1-sen .c2-1-w h5 {
+    font-size: 20px;
+    color: var(--color2);
+  }
+
+  .c2-1-sen .c2-1-w p {
+    font-size: small;
+    color: var(--color6);
+  }
+
+  .content2-1 .tic-k {
+    position: relative;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--color3);
+    padding: 12px 18px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .tic-k::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color4);
+    transition: left 0.5s ease-in-out;
+    z-index: 0;
+  }
+
+  .tic-k:hover::before {
+    left: 0;
+  }
+
+  .tic-k a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color);
+    z-index: 1;
+  }
+
+  .content2 {
+    flex-direction: column;
+    gap: 55px;
+    padding-left: 50px;
+  }
+
+  .content2-1 {
+    width: 90%;
+  }
+
+  #content2-2 {
+    width: 90%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 50px;
+  }
+
+  #content2-2 .main-img {
+    width: 100%;
+  }
+
+  #content2-2 .small-img {
+    width: 50%;
+    top: 80%;
+    right: 300px;
+  }
+}
+/*SECTION 2*/
+
+/*SECTION 5*/
+.con4-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.con4-1 h3 {
+  color: #26264b;
+  font-size: 50px;
+}
+
+.con4-1 p {
+  color: #212025;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+}
+
+.content5 {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-top: 50px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.con5-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 90%;
+}
+
+.con5-1 img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease-in-out;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.con5-1 img:hover {
+  filter: brightness(70%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .content5 {
+    gap: 25px;
+  }
+
+  .con5-1 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .con5-1 img {
+    width: 80%;
+    border-radius: 30px;
+  }
+}
+/*SECTION 5*/
+
+/*SECTION 6*/
+.content6 {
+  position: relative;
+  min-height: 120vh;
+  margin: 100px 0;
+  overflow: hidden;
+  padding: 0 40px 0;
+}
+
+.con6-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.con6-1-p1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  flex: 1;
+  margin: 0;
+  background-color: var(--color);
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.con6-1-t {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.con6-1-t p {
+  color: var(--color2);
+  font-size: 15px;
+  text-align: center;
+}
+
+.con6-1-t h5 {
+  color: var(--color1);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.con6-1-div {
+  color: var(--color6);
+  background-color: var(--color5);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.con6-1-li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color5);
+  padding: 0px 0 15px;
+}
+
+.con6-1-p1 .view6 {
+  display: inline-block;
+  position: relative;
+  background-color: var(--color1);
+  padding: 15px 35px;
+  overflow: hidden;
+}
+
+.con6-1-p1 .view6 a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color);
+  z-index: 1;
+}
+
+.con6-1-p1:hover {
+  background-color: var(--color1);
+}
+
+.con6-1-p1:hover .con6-1-t p,
+.con6-1-p1:hover .con6-1-t h5,
+.con6-1-p1:hover .con6-1-li ul li {
+  color: var(--color);
+}
+
+.con6-1-p1:hover .view6 {
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.con6-1-p1:hover .view6 a {
+  color: var(--color1);
+}
+
+.con6-1-p2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 20px;
+  flex: 1.2;
+  background-color: var(--color1);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.con6-1-p2 .con6-1-t p {
+  color: var(--color);
+  font-size: 15px;
+  text-align: center;
+}
+
+.con6-1-p2 .con6-1-t h5 {
+  color: var(--color);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.con6-1-p2 .con6-1-li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color);
+  padding: 20px 0;
+  margin: 0;
+}
+
+.con6-1-p2 .view6 {
+  display: block;
+  position: relative;
+  background-color: var(--color);
+  width: 80%;
+  max-width: 150px;
+  text-align: center;
+  padding: 15px 35px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.con6-1-p2 .view6 a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color1);
+  z-index: 1;
+}
+
+.con6-1-p2:hover {
+  background-color: var(--color);
+}
+
+.con6-1-p2:hover .con6-1-t p,
+.con6-1-p2:hover .con6-1-t h5,
+.con6-1-p2:hover .con6-1-li ul li {
+  color: var(--color1);
+}
+
+.con6-1-p2:hover .view6 {
+  background-color: var(--color1);
+  border-radius: 10px;
+}
+
+.con6-1-p2:hover .view6 a {
+  color: var(--color);
+}
+
+@media(max-width:768px){
+
+  .content6 {
+    position: relative;
+    min-height: 120vh;
+    overflow: hidden;
+    padding: 0 40px 0;
+    margin: 100px 0;
+  }
+
+  .con6-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .con6-1-p1{
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 45px;
+  } 
+  
+  .con6-1-t {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .con6-1-p1 .con6-1-t h5 {
+    color: var(--color1);
+    padding: 0px 50px;
+  }
+  
+  .con6-1-div {
+    color: var(--color6);
+    background-color: var(--color5);
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+
+  .con6-1-p1 .con6-1-li{
+    font-size: 12px;
+  }
+
+  .con6-1-p2 .con6-1-li{
+    font-size: 15px;
+  }
+  
+  .con6-1-p1 .view6 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    padding: 5px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .con6-1-p1 .view6 a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color);
+    z-index: 1;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .con6-1-p1:hover .view6 {
+    background-color: var(--color);
+    border-radius: 0%;
+  }
+
+  .con6-1-p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 20px;
+    flex: 1.2;
+    background-color: var(--color1);
+    border: 1px solid black;
+    border-radius: 85px;
+  }
+
+  .con6-1-p2 .view6 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    padding: 5px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .con6-1-p2:hover .view6 {
+    background-color: var(--color1);
+    border-radius: 0;
+  }
+
+  .con6-1-p2 .view6 a {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+/*SECTION 6*/

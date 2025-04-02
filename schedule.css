@@ -1,0 +1,154 @@
+:root {
+  --color: white;
+  --color1: #071a2b;
+  --color2: #003768;
+  --color3: #071a2b;
+  --color4: #173d86;
+  --color5: #64676c;
+  --color6: #868c98;
+  --color7: yellow;
+  --color8: #f5f3f9;
+  --primary-font: "Inter", sans-serif;
+}
+
+/* SECTION 4 */
+.content4 {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color);
+  color: var(--color);
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.con4-1 h3 {
+  color: var(--color1);
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.con4-1 p {
+  color: var(--color3);
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Day Tabs */
+.con4-2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.con4-2-1 {
+  background-color: var(--color8);
+  color: var(--color2);
+  padding: 15px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.con4-2-1:hover,
+.con4-2-1.active {
+  background-color: var(--color2);
+  color: var(--color);
+}
+
+/* Schedule Items */
+.schedule-container {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.con4-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--color6);
+  transition: background 0.3s ease-in-out;
+}
+
+.con4-3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.t-f h6 {
+  color: var(--color2);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.t-f p {
+  color: var(--color4);
+  font-size: 16px;
+}
+
+/* Dropdown */
+.dropdown-cont {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown i {
+  font-size: 22px;
+  color: var(--color4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-cont:hover .dropdown i {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 280%;
+  right: 0;
+  width: 550px;
+  background-color: var(--color);
+  color: var(--color6);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: left;
+}
+
+.dropdown-cont:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .con4-2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .con4-2-1 {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .schedule-container {
+    width: 100%;
+  }
+
+  .con4-3 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
