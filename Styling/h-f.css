@@ -274,7 +274,8 @@ body {
   display: flex;
   color: var(--color);
   padding: 0 0 100px;
-  background-image: url(Images/hero2.png.webp);
+  /*background-image: url(/Images/h1_hero.png.webp);*/
+  background-color: #26264b;
   justify-content: center;
   text-align: center;
   align-items: center;

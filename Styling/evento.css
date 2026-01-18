@@ -77,7 +77,7 @@ body {
 /* Dropdown Menu */
 .dropdown .submenu {
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.6s ease, visibility 0.3s ease;
   position: absolute;
@@ -266,7 +266,8 @@ body {
 /*SECTION 1*/
 .content1 {
   position: relative;
-  background-image: url(Images/h1_hero.png.webp);
+  /*background-image: url(Images/h1_hero.png.webp);*/
+  background-color: #26264b;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% center;

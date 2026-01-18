@@ -1,3 +1,0 @@
-                    <div class="view">
-                        <a href="evento.html">View SpacKert</a>
-                    </div>
