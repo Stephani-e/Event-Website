@@ -3,6 +3,8 @@
 A multi-page **event company** website built with pure HTML and CSS.  
 It showcases key sections an event brand would need, from services and gallery to contact and booking.
 
+## 🖥️ Demo 
+
 🔗 **Live Demo:** https://event-website-eight-drab.vercel.app/
 
 ## Features
