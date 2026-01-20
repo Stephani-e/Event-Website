@@ -31,5 +31,6 @@ It showcases key sections an event brand would need, from services and gallery t
 1. Clone the repository:
    ```bash
    git clone https://github.com/Stephani-e/Event-Website.git
+   cd Event-Website
 2. Open the project folder.
 3. Open index.html in your browser (or use a simple live server extension in VS Code).
