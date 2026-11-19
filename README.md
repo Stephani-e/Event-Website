@@ -5,7 +5,7 @@ It showcases key sections an event brand would need, from services and gallery t
 
 ## Demo 
 
-🔗 **Live Demo:** https://event-website-eight-drab.vercel.app/
+🔗 **Live Demo:** https://event-website-sga.vercel.app/
 
 ## Features
 
